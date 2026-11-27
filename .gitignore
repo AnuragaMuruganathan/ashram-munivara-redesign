@@ -3,6 +3,7 @@ node_modules/
 out/
 .vercel/
 .stitch/
+.env*
 *-check.png
 *.log
 .DS_Store
