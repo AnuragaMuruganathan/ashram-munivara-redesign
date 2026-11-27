@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Ashram Munivara — Complete UI, UX and Vercel Audit</title>
+  <style>
+    :root{--ink:#18333d;--muted:#56676c;--paper:#f5f1e9;--card:#fffdf9;--line:#d7d5ce;--pink:#9b4863;--blue:#315f7d;--green:#245b4b;--amber:#8a5a12;--red:#9b342f}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main,header,footer{max-width:1180px;margin:auto;padding:24px}header{padding-top:40px}h1,h2,h3{line-height:1.15;margin:0 0 12px}h1{font-size:clamp(32px,5vw,58px);letter-spacing:-.04em;max-width:900px}h2{font-size:28px;margin-top:38px}h3{font-size:19px}p{margin:0 0 12px}a{color:var(--blue);text-underline-offset:3px}code{font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace;overflow-wrap:anywhere}.lead{font-size:17px;max-width:900px}.badges,.stats,.toc,.cards{display:grid;gap:12px}.badges{display:flex;flex-wrap:wrap;margin:18px 0}.badge,.pill{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:3px 9px;font-size:12px;font-weight:700}.badge{background:var(--card)}.stats{grid-template-columns:repeat(4,1fr);margin:24px 0}.stat,.card,section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}.stat strong{display:block;font-size:28px}.stat span{color:var(--muted);font-size:12px}.toc{grid-template-columns:repeat(3,1fr);margin:18px 0}.toc a{padding:10px;background:var(--card);border:1px solid var(--line);border-radius:8px;text-decoration:none}section{margin:14px 0}section h2{margin-top:0}.cards{grid-template-columns:repeat(2,1fr)}.card h3{margin-bottom:7px}.card p:last-child{margin-bottom:0}.high{border-left:4px solid var(--red)}.medium{border-left:4px solid var(--amber)}.low{border-left:4px solid var(--blue)}.pass{border-left:4px solid var(--green)}.pill{font-size:10px;text-transform:uppercase;letter-spacing:.06em}.pill.high{color:var(--red);border-color:#dcaaa6}.pill.medium{color:var(--amber);border-color:#dec493}.pill.low{color:var(--blue);border-color:#aac4d4}.pill.pass{color:var(--green);border-color:#9abfb2}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px}th,td{text-align:left;vertical-align:top;padding:9px;border-bottom:1px solid var(--line)}th{background:#ede8df}td:last-child{min-width:230px}.num{text-align:right;white-space:nowrap}.muted{color:var(--muted)}.small{font-size:12px}.finding{margin:0 0 12px;padding-left:20px}.finding li{margin-bottom:7px}.note{border-left:4px solid var(--pink);background:#f8edf1;padding:12px;margin:12px 0}.success{background:#edf5f1;border-left:4px solid var(--green);padding:12px}.warning{background:#fbf3e5;border-left:4px solid var(--amber);padding:12px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#10272f;color:#edf3f2;padding:16px;border-radius:8px;font:12px/1.55 ui-monospace,SFMono-Regular,Consolas,monospace}details{border:1px solid var(--line);border-radius:8px;margin:10px 0;padding:10px;background:#faf8f3}summary{cursor:pointer;font-weight:700}.columns{columns:2;column-gap:24px}.compact{list-style:none;padding:0;margin:10px 0}.compact li{break-inside:avoid;border-bottom:1px solid var(--line);padding:7px 0}.compact strong{display:block}.compact span{color:var(--muted);font-size:12px}footer{color:var(--muted);font-size:12px;padding-bottom:40px}@media(max-width:760px){main,header,footer{padding:14px}.stats{grid-template-columns:repeat(2,1fr)}.toc,.cards{grid-template-columns:1fr}.columns{columns:1}section{padding:14px}th,td{padding:7px;min-width:110px}td:last-child{min-width:200px}}@media print{body{background:white}.toc,.badges{display:none}main,header,footer{max-width:none;padding:10px}section,.stat,.card{break-inside:avoid}details>*{display:block}a{color:inherit;text-decoration:none}}
+  </style>
+</head>
+<body>
+<header>
+  <p class="muted">Read-only website audit · UI · UX · Accessibility · 3D · Images · Performance · Vercel</p>
+  <h1>Ashram Munivara<br>Complete audit</h1>
+  <p class="lead">A full review of the current Next.js site, including the Three.js Hero, all content sections, desktop and mobile layouts, accessibility, responsive images, and deployment readiness. Findings come from source inspection, the existing build output, rendered pages at 1491×813, 390×844 and 360×800, and targeted reduced-motion and no-WebGL browser checks.</p>
+  <div class="badges"><span class="badge">No application edits</span><span class="badge">No configuration changes</span><span class="badge">No dependencies added</span><span class="badge">No image changes</span></div>
+  <div class="stats">
+    <div class="stat"><strong>106</strong><span>explicit margin, padding or gap declarations above 5px</span></div>
+    <div class="stat"><strong>1.47 MiB</strong><span>17 public image files; no orphaned assets found</span></div>
+    <div class="stat"><strong>3.5 MB</strong><span>duplicate self-contained snapshot in .stitch/home.html</span></div>
+    <div class="stat"><strong>0.62 MB+</strong><span>estimated minified Three.js lazy chunk before compression</span></div>
+  </div>
+  <nav class="toc" aria-label="Report contents"><a href="#priority">Priority findings</a><a href="#visual">Section-by-section UI/UX</a><a href="#spacing">Spacing inventory</a><a href="#three">3D and accessibility</a><a href="#images">Images and deployment</a><a href="#plan">Optimization plan</a></nav>
+</header>
+<main>
+<section id="priority">
+  <h2>1. Priority findings</h2>
+  <div class="cards">
+    <article class="card high"><span class="pill high">High</span><h3>Reduced motion still downloads Three.js</h3><p><code>components/HeroExperience.js:8</code> initializes reduced motion to false, while the real preference is read in a separate effect. The initialization effect can import Three.js before the preference updates.</p><p><strong>Confirmed:</strong> with reduced motion enabled, the scene is hidden and no canvas is created, but <code>/_next/static/chunks/3-d1rft_59n9h.js</code> is still requested. Check the preference before any dynamic import, preferably using an unknown initial state or a direct <code>matchMedia</code> guard.</p></article>
+    <article class="card high"><span class="pill high">High</span><h3>Three.js is lazy-split, not lazy-loaded by need</h3><p><code>components/HeroExperience.js:47–55</code> dynamically imports Three.js and initializes the renderer immediately on mount. Every mobile visitor incurs download, parse, scene construction, texture upload, and GPU setup.</p><p><code>components/HeroExperience.js:54</code> also requests <code>powerPreference: "high-performance"</code>, while desktop rendering targets 60 FPS. Defer work until after LCP or interaction, skip constrained/save-data devices, and consider CSS/SVG for this simple treatment.</p></article>
+    <article class="card high"><span class="pill high">High</span><h3>106 spacing declarations exceed the 5px requirement</h3><p>The stylesheet contains 106 explicit margin/padding/gap declarations above 5px, plus custom spacing tokens for larger gutters and section rhythm. The largest intentional values are 48px section spacing, 32px layout gaps, 24px grid gaps, and 20px event-card padding.</p><p>The full selector inventory is included below. Reduce both direct declarations and responsive/custom-token values if the 5px rule is literal, while retaining accessible 44px targets.</p></article>
+    <article class="card high"><span class="pill high">High</span><h3>Practice cards have unexplained empty space</h3><p>All four Yoga cards show a large blank lower region. The 2×2 grid stretches rows to match the Sadhana card rather than their own content. This looks like unused space, not intentional editorial whitespace.</p><p><strong>Root cause:</strong> <code>.practice-layout</code> uses <code>align-items: stretch</code> and <code>.path-grid</code> uses two fractional rows. Match card height to content or rebalance the image/card composition without adding filler text.</p></article>
+    <article class="card high"><span class="pill high">High</span><h3>A duplicate snapshot and diagnostic artifact should not deploy</h3><p><code>.stitch/home.html</code> is a 3.5 MB self-contained copy of the site with base64 images and styles. It duplicates the original deployment rather than serving a runtime purpose. <code>hero-3d-check.png</code> is another 227 KB diagnostic artifact in the project root.</p><p>Exclude migration/diagnostic artifacts from source deployment or store them outside the project. Do not delete the migration file blindly if it is still required for Stitch.</p></article>
+    <article class="card medium"><span class="pill medium">Medium</span><h3>Responsive image coverage is incomplete</h3><p>The Hero has one 630×630 source and no <code>srcSet</code>, so it can be soft above 630 CSS pixels or on high-DPR screens. Other images have only two candidates, and several <code>sizes</code> values use viewport width rather than the actual grid track and gutters.</p><p>Add correctly sized local candidates and align each <code>sizes</code> declaration with real rendered widths. Current files are already small; sizing is the priority, not another compression format.</p></article>
+  </div>
+  <div class="note"><strong>3D fallback works:</strong> a simulated WebGL failure produced zero canvas elements and kept the original Hero image. The DOM image and texture share a URL, so fallback/progressive enhancement is sound. No play/pause button, slideshow, or slideshow numbering is present.</div>
+</section>
+<section id="visual">
+  <h2>2. Section-by-section UI and UX findings</h2>
+  <div class="table-wrap"><table><thead><tr><th>Area</th><th>Severity</th><th>Mistake or risk</th><th>Correction</th></tr></thead><tbody>
+    <tr><td>Header and navigation</td><td>Low</td><td>Sticky-header alignment is coherent, but selection locking only listens for wheel, touch, and keyboard scrolling. A scrollbar drag or browser Back can leave the clicked item selected after the user moves elsewhere.</td><td>Release the selection lock for deliberate scrollbar/hash navigation as well as input scrolling. Keep the independent Puja/Yoga active states.</td></tr>
+    <tr><td>Hero and 3D scene</td><td>High</td><td>Three.js downloads immediately, even for constrained and reduced-motion users. The 630px texture can soften on wide/high-DPR displays. The large lotus covers part of the temple photograph and is visually prominent.</td><td>Defer 3D initialization, add responsive texture candidates, reduce lotus prominence if it competes with the photography, and retain the static fallback.</td></tr>
+    <tr><td>Hero loading</td><td>Low</td><td>The small “Preparing sanctuary” loader is appropriate, but scene loading only completes after the Three.js chunk and texture initialize, making its perceived cost noticeable on slow networks.</td><td>Load the static image first and show the loader only while an eligible WebGL enhancement is actually pending.</td></tr>
+    <tr><td>About</td><td>Low</td><td>Image and text proportions are good. Multiple 16px paragraph and grid gaps still violate the strict 5px constraint.</td><td>Reduce declarations globally; do not change the authentic image choices.</td></tr>
+    <tr><td>Practice</td><td>High</td><td>Short card content leaves a large empty lower half. Mobile “Bhakti / Yoga” breaks into two lines and adds reading length.</td><td>Use content-height cards, rebalance the image-to-card ratio, and keep card titles compact on small screens.</td></tr>
+    <tr><td>Weekly</td><td>Low</td><td>Puja and Yoga cards are aligned and images are appropriate. The section can extend below one screen because of 24px grid gaps and 16px content padding.</td><td>Reduce spacing declarations, preserve schedule row wrapping, and avoid forcing a viewport height.</td></tr>
+    <tr><td>Stay</td><td>Low</td><td>Composition and IDR pricing are clear. The section becomes long on mobile because of large image treatment and repeated spacing, not because of content.</td><td>Use the 4:3 image ratio and reduce vertical gaps while keeping all six booking facts.</td></tr>
+    <tr><td>Events</td><td>Medium</td><td>No actual upcoming dates or last-verified timestamp are provided. Visitors must use WhatsApp for every event, creating friction. The current detail lists are useful, but the section is not self-service.</td><td>Show real dates or an explicit “not published” state with a verified update time. Do not fabricate events or use decorative content to fill space.</td></tr>
+    <tr><td>Visit</td><td>Low</td><td>Contact information is readable and well aligned. External directions/WhatsApp links do not consistently announce new-tab behavior.</td><td>Use a consistent accessible “opens in a new tab” label or same-tab navigation where appropriate.</td></tr>
+    <tr><td>Footer</td><td>Low</td><td>The year is evaluated during static rendering and can become stale. The shared logo is not an ideal Apple touch icon.</td><td>Maintain the year deliberately and provide a dedicated 180×180 Apple touch icon.</td></tr>
+    <tr><td>Section transitions</td><td>Low</td><td>Every section receives a 16px perspective transform during entry. It does not hide content, but it can briefly shift anchor landings and create unnecessary motion.</td><td>Keep transitions subtle and do not apply them to the active anchor target or when reduced motion is requested.</td></tr>
+  </tbody></table></div>
+  <div class="success"><strong>Layout strengths:</strong> no horizontal overflow was observed at 360px, 390px, 1491px, or the previously verified tablet widths. Cards in shared rows align consistently, section backgrounds meet cleanly, the mobile menu remains in document flow, and no content is hidden to satisfy a viewport-height rule.</div>
+</section>
+<section id="spacing">
+  <h2>3. Complete spacing inventory</h2>
+  <p>The scan found <strong>106 explicit declarations</strong> where at least one pixel value in <code>margin</code>, <code>padding</code>, or <code>gap</code> exceeds 5px. Values below are selectors and source lines in <code>app/globals.css</code>. Custom variables such as <code>--gutter: 32px</code>, <code>--gap: 24px</code>, and <code>--section-space: 48px</code> must also be reviewed during implementation.</p>
+  <div class="columns"><ul class="compact">
+    <li><strong>Root and base — 3 declarations</strong><span>Root gap 17; responsive root gaps 185, 231.</span></li>
+    <li><strong>Header and navigation — 7 declarations</strong><span>Skip link 40; header inner 43; brand 44; desktop nav 50; shared buttons 54 (2); text link 60 (2).</span></li>
+    <li><strong>Hero and welcome — 17 declarations</strong><span>Hero grid 65; Om 67; intro 70, 233; button row 71 (2), 234; location 72 (2); caption 76 (2); welcome 79 (2), 236.</span></li>
+    <li><strong>About and facilities — 18 declarations</strong><span>About grid 83; copy 84; founder 85 (3); media 89, 239; note 94, 241; note text 96; footnote 97; life grid 98 (2), 243 (2); article 99; paragraph 101; link 102.</span></li>
+    <li><strong>Practice — 8 declarations</strong><span>Practice layout 105; Sadhana copy 108; path grid 111; path card 112; strong 116; paragraph 117.</span></li>
+    <li><strong>Weekly and schedules — 15 declarations</strong><span>Weekly grid 119, 189; content 126; title 127; copy 130; schedule list 131; rows 132 (2); dt 133; note 136 (2).</span></li>
+    <li><strong>Stay — 10 declarations</strong><span>Stay grid 139; copy 141; rates 142 (2); rate cards 143; facts 147 (2); fact items 148.</span></li>
+    <li><strong>Events — 7 declarations</strong><span>Event card 151; event top 153; paragraph 156; details 157 (3); metadata 158; action 159.</span></li>
+    <li><strong>Visit and contact — 10 declarations</strong><span>Visit grid 161; intro 162; contact list 163; rows 164 (2), 266; etiquette 170 (2), 204.</span></li>
+    <li><strong>Footer — 8 declarations</strong><span>Footer 175; main 176, 226; links 179; social buttons 180; back-to-top 181 (2); bottom 182 (3).</span></li>
+    <li><strong>Shared grids and mobile navigation — 11 declarations</strong><span>About/Stay/Visit grids 188, 238; open mobile nav 197 (2); mobile links 198 (2); active mobile link 199; mobile visit 200.</span></li>
+    <li><strong>Headings and 3D loading — 3 declarations</strong><span>Section heading 218; scene loading 278 (2).</span></li>
+  </ul></div>
+  <details><summary>Implementation rule for the 5px requirement</summary><ul class="finding"><li>Reduce every direct declaration above 5px to 0–5px, including responsive overrides.</li><li>Review token-based gutters, section padding, and gaps as well as literal declarations.</li><li>Do not shrink accessible targets below 44px; use <code>min-height</code>/<code>min-width</code> instead of large padding.</li><li>Recheck text wrapping and hierarchy after compaction. Do not trade overflow or congestion for smaller numbers.</li></ul></details>
+</section>
+<section id="three">
+  <h2>4. Three.js and accessibility findings</h2>
+  <div class="cards">
+    <article class="card high"><span class="pill high">High</span><h3>Initial preference gate is too late</h3><p>Reduced motion is checked after mount, but initialization is in a different effect. The first effect pass can already start the dynamic import. CSS hides the result but cannot undo the network request.</p></article>
+    <article class="card high"><span class="pill high">High</span><h3>High-performance rendering is the default</h3><p>The renderer explicitly requests high performance and targets 60 FPS on desktop. Shadows are enabled on non-coarse devices. Off-screen and hidden-tab pausing are implemented correctly, but active rendering still consumes GPU/battery.</p></article>
+    <article class="card medium"><span class="pill medium">Medium</span><h3>Repeated layout reads</h3><p><code>getBoundingClientRect()</code> runs on every scroll event and pointer movement at <code>components/HeroExperience.js:160–169</code>. Passive listeners do not remove this layout work.</p><p>Cache bounds and refresh from the existing ResizeObserver, or schedule updates through one requestAnimationFrame.</p></article>
+    <article class="card medium"><span class="pill medium">Medium</span><h3>External-link announcements vary</h3><p>Header/footer social links announce new tabs, while community updates, schedule confirmation, stay/event inquiries, directions, and WhatsApp contacts use <code>target="_blank"</code> without the same disclosure.</p></article>
+    <article class="card low"><span class="pill low">Low</span><h3>Icon and year maintenance</h3><p>The Apple touch icon reuses a 146×141 logo rather than a dedicated 180×180 image. The prerendered copyright year can become stale between deployments.</p></article>
+    <article class="card pass"><span class="pill pass">Pass</span><h3>Accessibility fundamentals are strong</h3><p>Skip link, focusable main target, visible focus styles, meaningful image alternatives, decorative logo alternatives, mobile <code>aria-expanded</code>/<code>aria-controls</code>, initial menu focus, Escape restoration, and reduced-motion CSS are all present.</p></article>
+  </div>
+</section>
+<section id="images">
+  <h2>5. Images, storage, and caching</h2>
+  <p>The public image folder is <strong>1.47 MiB</strong> and contains no orphaned assets. Two-size variants are intentional responsive alternatives, not duplicate browser downloads. The following local inventory was verified.</p>
+  <div class="table-wrap"><table><thead><tr><th>Asset</th><th>Dimensions</th><th>Size</th><th>Audit finding</th></tr></thead><tbody>
+    <tr><td>about-temple-480</td><td>480×604</td><td class="num">79.0 KiB</td><td>Appropriate small variant.</td></tr>
+    <tr><td>about-temple-768</td><td>768×967</td><td class="num">182.2 KiB</td><td>Largest About variant; suitable for current slot.</td></tr>
+    <tr><td>ceremony-480</td><td>480×605</td><td class="num">55.9 KiB</td><td>Appropriate small variant.</td></tr>
+    <tr><td>ceremony-768</td><td>768×968</td><td class="num">132.2 KiB</td><td>Limited for large high-DPR Visit displays.</td></tr>
+    <tr><td>community-480</td><td>480×599</td><td class="num">48.8 KiB</td><td>Appropriate small variant.</td></tr>
+    <tr><td>community-766</td><td>766×956</td><td class="num">107.2 KiB</td><td>Good current crop and weight.</td></tr>
+    <tr><td>guru-144</td><td>144×144</td><td class="num">6.1 KiB</td><td>Efficient founder thumbnail.</td></tr>
+    <tr><td>hero-night-square</td><td>630×630</td><td class="num">47.4 KiB</td><td>Small file, but only one texture/hero candidate.</td></tr>
+    <tr><td>logo.png</td><td>146×141</td><td class="num">31.7 KiB</td><td>Shared file avoids duplicate requests; not an ideal Apple icon.</td></tr>
+    <tr><td>offerings-640</td><td>640×429</td><td class="num">51.1 KiB</td><td>Good small variant.</td></tr>
+    <tr><td>offerings-1030</td><td>1030×690</td><td class="num">115.6 KiB</td><td>Good current variant.</td></tr>
+    <tr><td>puja-640</td><td>640×427</td><td class="num">63.7 KiB</td><td>Good small variant.</td></tr>
+    <tr><td>puja-1030</td><td>1030×687</td><td class="num">138.3 KiB</td><td>Good current variant.</td></tr>
+    <tr><td>stay-640</td><td>640×426</td><td class="num">83.5 KiB</td><td>Good small variant.</td></tr>
+    <tr><td>stay-1030</td><td>1030×686</td><td class="num">185.7 KiB</td><td>Largest Stay file; still reasonable.</td></tr>
+    <tr><td>yoga-560</td><td>560×453</td><td class="num">57.2 KiB</td><td>Good small variant.</td></tr>
+    <tr><td>yoga-845</td><td>845×684</td><td class="num">117.1 KiB</td><td>Good current variant; high-DPR needs review.</td></tr>
+  </tbody></table></div>
+  <h3>What is working</h3>
+  <ul class="finding"><li>All non-priority images lazy-load with asynchronous decoding. Only the Hero is eager/high priority.</li><li>Image dimensions and parent aspect ratios reserve layout space and reduce layout shift.</li><li>Fingerprinted WebP files receive <code>public, max-age=31536000, immutable</code>, appropriate for content-hashed URLs.</li><li>The unversioned logo is not covered by that immutable rule, which is correct.</li><li><code>images.unoptimized: true</code> already exists in <code>next.config.mjs:2</code>. Native images already implement manual responsive delivery.</li></ul>
+  <div class="warning"><strong>Deployment artifacts:</strong> <code>node_modules</code> is about 408 MB and <code>.next</code> about 103 MB locally, but both are excluded from source control and are not the intended deployment footprint. The separate 3.5 MB <code>.stitch/home.html</code> and 227 KB diagnostic screenshot should be handled explicitly so they do not become accidental source artifacts.</div>
+</section>
+<section id="plan">
+  <h2>6. Optimization plan for later implementation</h2>
+  <ol class="finding">
+    <li><strong>Fix the 3D gate first.</strong> Do not import Three.js until reduced motion is explicitly false. Skip save-data/constrained devices and defer initialization until after LCP or an appropriate interaction.</li>
+    <li><strong>Reduce rendering work.</strong> Prefer automatic power mode, cap desktop quality, retain mobile 30 FPS/DPR limits and off-screen pausing, and cache scroll/pointer geometry. Evaluate CSS/SVG for this simple scene if WebGL is not essential.</li>
+    <li><strong>Apply the spacing rule.</strong> Reduce all 106 declarations and token-based gutters above 5px, then visually verify that text does not collide and controls remain usable.</li>
+    <li><strong>Rebalance Practice.</strong> Use content-height cards or a different image/card ratio. Do not add filler text to occupy empty space.</li>
+    <li><strong>Improve responsive images locally.</strong> Add 315/480px Hero candidates for small screens and 960/1260px candidates for wide/high-DPR use. Add larger candidates only for images whose actual layout requires them. Derive every <code>sizes</code> value from the real grid track.</li>
+    <li><strong>Keep the existing configuration merge.</strong> Preserve <code>poweredByHeader</code> and the custom <code>headers()</code> function when retaining <code>images: { unoptimized: true }</code>. No configuration change is required for this requirement.</li>
+    <li><strong>Exclude migration and diagnostic artifacts.</strong> Decide whether <code>.stitch/home.html</code> must be retained for Stitch. If it is only a migration artifact, keep it out of deployment. Remove diagnostic screenshots from source deployment.</li>
+    <li><strong>Finish UX maintenance.</strong> Add a square Apple touch icon, standardize new-tab labels, maintain the copyright year, and show verified event dates or a clear unpublished state.</li>
+    <li><strong>Validate on Vercel preview.</strong> Confirm actual Brotli/gzip transfer sizes, LCP on slow networks, reduced-motion producing no Three.js request, WebGL failure fallback, keyboard navigation, and immutable WebP response headers.</li>
+  </ol>
+  <pre>// Existing configuration — audit only, no changes made
+const nextConfig = {
+  images: { unoptimized: true },
+  poweredByHeader: false,
+  async headers() {
+    return [{
+      source: "/images/:file*.webp",
+      headers: [{ key: "Cache-Control", value: "public, max-age=31536000, immutable" }],
+    }];
+  },
+};</pre>
+  <p class="small muted">Scope limits: no application or configuration was changed during this audit, no Lighthouse score is claimed, and Vercel response headers or real-user Web Vitals were not available. Local diagnostics confirmed the reduced-motion chunk request and the no-WebGL static fallback.</p>
+</section>
+<section>
+  <h2>7. Acceptance checklist</h2>
+  <div class="table-wrap"><table><thead><tr><th>Priority</th><th>Action</th><th>Acceptance criterion</th></tr></thead><tbody>
+    <tr><td>P0</td><td>Stop reduced-motion 3D downloads</td><td>No Three.js chunk or WebGL context is requested with reduced motion enabled.</td></tr>
+    <tr><td>P0</td><td>Reduce spacing to ≤5px</td><td>No margin/padding/gap declaration exceeds 5px; no overflow or congestion results.</td></tr>
+    <tr><td>P0</td><td>Rebalance Practice</td><td>No unexplained empty lower card regions on desktop or mobile.</td></tr>
+    <tr><td>P0</td><td>Prevent accidental artifact deployment</td><td>Migration and diagnostic duplicates are excluded from source deployment.</td></tr>
+    <tr><td>P1</td><td>Complete responsive images</td><td>No small slot downloads an oversized original, and no high-DPR slot is visibly soft.</td></tr>
+    <tr><td>P1</td><td>Reduce 3D cost</td><td>3D initializes only for eligible devices, pauses off-screen, and retains a static fallback.</td></tr>
+    <tr><td>P1</td><td>Finish navigation and UX details</td><td>Puja and Yoga stay independent, all links land correctly, and selection state follows deliberate navigation.</td></tr>
+    <tr><td>P2</td><td>Verify Vercel preview</td><td>Production build passes and real transfer size, caching, LCP, and interactions are checked.</td></tr>
+    <tr><td>Always</td><td>Preserve controls constraint</td><td>No play/pause button and no numbered slideshow/image movement is introduced.</td></tr>
+  </tbody></table></div>
+</section>
+</main>
+<footer>Ashram Munivara audit · Standalone HTML · No external assets, fonts, scripts or tracking · Audit only; no implementation or configuration changes were made.</footer>
+</body>
+</html>
