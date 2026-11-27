@@ -1,6 +1,7 @@
 node_modules/
 .next/
 out/
+.vercel/
 .stitch/
 *-check.png
 *.log
