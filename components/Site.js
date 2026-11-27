@@ -59,7 +59,7 @@ export default function Site() {
               <div className="hero-location"><MapPin size={17} aria-hidden="true" /><span>Junjungan, five kilometres north of Ubud</span></div>
             </div>
             <div className="hero-visual">
-              <div className="hero-image"><ResponsiveImage src={images.hero} srcSet={`${images.hero320} 320w, ${images.hero480} 480w, ${images.hero} 630w`} alt="Ashram Munivara temple illuminated beneath the night sky" width={630} height={630} priority className="image-fill" sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1280px) 55vw, 736px" /></div>
+              <div className="hero-image"><ResponsiveImage src={images.hero} srcSet={`${images.hero320} 320w, ${images.hero480} 480w, ${images.hero} 630w`} alt="Ashram Munivara temple illuminated beneath the night sky" width={630} height={630} priority className="image-fill" sizes="(max-width: 900px) calc(100vw - 10px), (max-width: 1280px) 55vw, 736px" /></div>
               <div className="hero-caption"><span><span lang="sa">श्रद्धा</span> · Devotion</span><span>Established 2006</span></div>
             </div>
           </div>
@@ -109,11 +109,11 @@ export default function Site() {
             <div className="section-heading weekly-heading"><h2 id="weekly-title">A weekly rhythm of practice.</h2><p>Visitors are welcome. Confirm schedules before travelling.</p></div>
             <div className="weekly-grid">
               <div className="weekly-card"><article id="puja" aria-labelledby="puja-title" tabIndex={-1}>
-                <div className="weekly-image"><ResponsiveImage src={images.puja1030} srcSet={`${images.puja640} 640w, ${images.puja1030} 1030w`} alt="Evening puja ceremony at Ashram Munivara" width={1030} height={687} className="image-fill" sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1280px) 46vw, 610px" /></div>
+                <div className="weekly-image"><ResponsiveImage src={images.puja1030} srcSet={`${images.puja640} 640w, ${images.puja1030} 1030w`} alt="Evening puja ceremony at Ashram Munivara" width={1030} height={687} className="image-fill" sizes="(max-width: 900px) calc(100vw - 10px), (max-width: 1280px) 46vw, 610px" /></div>
                 <div className="weekly-content"><div className="weekly-title-row"><h3 id="puja-title">Puja</h3><span>Prayer · Chant · Meditation</span></div><p>Celebrate the divine through Jnana Buda Siwa songs, dance, offerings and prayer.</p><dl className="schedule-list"><div><dt><CalendarDays size={18} aria-hidden="true" /> Days</dt><dd>Full moon, new moon & Kliwon days</dd></div><div><dt><Clock3 size={18} aria-hidden="true" /> Time</dt><dd>Around 7:00–7:30 pm</dd></div><div><dt><Check size={18} aria-hidden="true" /> Dress</dt><dd>Sarong, sash & covered shoulders</dd></div></dl></div>
               </article></div>
               <div className="weekly-card"><article id="yoga" className="yoga-card" aria-labelledby="yoga-title" tabIndex={-1}>
-                <div className="weekly-image"><ResponsiveImage src={images.yoga845} srcSet={`${images.yoga560} 560w, ${images.yoga845} 845w`} alt="Yoga practice beside the water at Ashram Munivara" width={845} height={684} className="image-fill" sizes="(max-width: 900px) calc(100vw - 32px), (max-width: 1280px) 46vw, 610px" /></div>
+                <div className="weekly-image"><ResponsiveImage src={images.yoga845} srcSet={`${images.yoga560} 560w, ${images.yoga845} 845w`} alt="Yoga practice beside the water at Ashram Munivara" width={845} height={684} className="image-fill" sizes="(max-width: 900px) calc(100vw - 10px), (max-width: 1280px) 46vw, 610px" /></div>
                 <div className="weekly-content"><div className="weekly-title-row"><h3 id="yoga-title">Yoga</h3><span>Movement · Breath · Stillness</span></div><p>Open asana classes support physical, mental and emotional wellbeing. Mats are supplied.</p><dl className="schedule-list"><div><dt><CalendarDays size={18} aria-hidden="true" /> Days</dt><dd>Every Monday & Wednesday</dd></div><div><dt><Clock3 size={18} aria-hidden="true" /> Time</dt><dd>5:00–6:30 pm</dd></div><div><dt><Check size={18} aria-hidden="true" /> Price</dt><dd>IDR 50,000 visitors · IDR 35,000 guests</dd></div></dl></div>
               </article></div>
             </div>
@@ -190,7 +190,7 @@ export default function Site() {
 
       <footer className="site-footer">
         <div className="container footer-main">
-          <a className="brand footer-brand" href="#home" aria-label="Back to top"><img src="/images/logo.png" width="64" height="62" alt="" /><span className="footer-brand-divider" aria-hidden="true"></span><span className="brand-type"><strong>Ashram Munivara</strong><span>Jnana Buda Siwa · Ubud, Bali</span></span></a>
+          <a className="brand footer-brand" href="#home" aria-label="Back to top"><img src="/images/logo.png" width="64" height="62" alt="" loading="lazy" decoding="async" /><span className="footer-brand-divider" aria-hidden="true"></span><span className="brand-type"><strong>Ashram Munivara</strong><span>Jnana Buda Siwa · Ubud, Bali</span></span></a>
           <div className="footer-message"><Flower2 size={54} strokeWidth={1.3} aria-hidden="true" /><p>May all beings be happy.</p></div>
           <div className="footer-links"><a href="https://www.facebook.com/groups/Munivara/" target="_blank" rel="noreferrer" aria-label="Ashram Munivara on Facebook (opens in a new tab)"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 21v-8h2.8l.4-3h-3.2V8.1c0-.9.3-1.6 1.7-1.6H17V3.8c-.3 0-1.4-.1-2.6-.1-2.6 0-4.4 1.6-4.4 4.5V10H7v3h3v8h3.5Z" /></svg></a><a href="mailto:infoashrammunivara@gmail.com" aria-label="Email Ashram Munivara"><Mail size={20} aria-hidden="true" /></a><a href="#home" className="back-to-top">Back to top <ArrowUpRight size={16} aria-hidden="true" /></a></div>
         </div>
